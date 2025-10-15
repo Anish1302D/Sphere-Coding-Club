@@ -1,4 +1,4 @@
-![Sphere Logo](https://github.com/YourUsername/YourRepo/raw/main/logo.png)
+![Sphere Logo]([https://github.com/YourUsername/YourRepo/raw/main/logo.png](https://github.com/Anish1302D/Sphere-Coding-Club/blob/main/LOGO.jpg?raw=true))
 
 # 🌐 Sphere — The Hackathon Club of SP College
 
