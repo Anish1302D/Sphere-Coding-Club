@@ -1,3 +1,5 @@
+![Sphere Logo](https://github.com/YourUsername/YourRepo/raw/main/logo.png)
+
 # 🌐 Sphere — The Hackathon Club of SP College
 
 > **Innovate. Collaborate. Code.**
