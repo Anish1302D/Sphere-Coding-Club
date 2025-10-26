@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #100e16;
+    color: #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+header {
+    width: 100%;
+    max-width: 900px;
+}
+
+header h1 {
+    color: #00ffff;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+}
+
+header .content {
+    margin-bottom: 40px;
+}
+
+header .content p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+header .content p:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* Scrollbar for long content */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1a1720;
+}
+
+/* ---- Back Button ---- */
+.back-btn {
+    background: none;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    padding: 10px 20px;
+    margin-top: 60px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.back-btn:hover {
+    background: #00ffff;
+    color: #000;
+    transform: scale(1.05);
+}
