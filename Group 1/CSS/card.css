@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #bffcff;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #101213;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  color: #00ffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.3em;
+  margin-bottom: 80px;
+  text-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* ---- Card ---- */
+.card {
+  background: rgba(0, 20, 25, 0.8);
+  height: 320px;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border: 1px solid rgba(0,255,255,0.2);
+}
+
+figure {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #00ffff, #00cccc);
+}
+
+figure img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.name {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #00ffff;
+}
+
+.role {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #8efcff;
+  text-align: center;
+}
+
+.separator {
+  margin: 16px;
+  height: 5px;
+  width: 60px;
+  background-color: rgba(0,255,255,0.1);
+  position: relative;
+  transition: 0.4s;
+}
+
+.social-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-container button {
+  cursor: pointer;
+  background: none;
+  border: 1.8px solid #00ffff;
+  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+  font-size: 0.8em;
+  margin: 8px;
+  color: #00ffff;
+  transition: all 0.3s ease;
+}
+
+.social-container button:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0,255,255,0.5);
+}
+
+/* ---- Hover Effects ---- */
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.3);
+}
+
+.card:hover figure img {
+  filter: grayscale(0%);
+}
+
+.card:hover .separator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff, #00cccc);
+  animation: widthAnimation 0.4s;
+}
+
+@keyframes widthAnimation {
+  from { width: 0px; }
+  to { width: 60px; }
+}
+
+/* ---- Back Button ---- */
+.back-btn {
+  background: none;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  padding: 10px 20px;
+  margin: 60px auto 0 auto; /* center horizontally */
+  font-size: 1.1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(0,255,255,0.5);
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  display: block; /* required for margin auto */
+}
+
+.back-btn:hover {
+  background: #00ffff;
+  color: #000;
+  transform: scale(1.05);
+}
